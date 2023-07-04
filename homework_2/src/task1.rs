@@ -23,7 +23,7 @@ fn find_term(search_term: &str, quote: &str) -> String {
         if line.contains(SEARCH_TERM) {
             a = line.to_string();
             n += 1;
-            a = format!("{}:{}",n,a);
+            a = format!("{}: {}",n,a);
             break;
         } else {
             
