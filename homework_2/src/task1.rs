@@ -17,13 +17,13 @@ fn main() {
 }
 
 fn find_term(search_term: &str, quote: &str) -> String {
-    let a = 'z'.to_string();
+    let mut a = 'z'.to_string();
     let mut n: i32 = 0;
     for line in QUOTE.lines() {
         if line.contains(SEARCH_TERM) {
-            let a = line;
+            a = line.to_string();
             n += 1;
-            let a = format!("{}:{}",a,n);
+            a = format!("{}:{}",a,n);
             break;
         } else {
             
