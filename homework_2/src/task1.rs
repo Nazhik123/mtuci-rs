@@ -18,7 +18,7 @@ fn main() {
 
 fn find_term(search_term: &str, quote: &str) -> String {
     let mut a = 'z'.to_string();
-    let mut n: i32 = 0;
+    let mut n: i32 = 1;
     for line in QUOTE.lines() {
         if line.contains(SEARCH_TERM) {
             a = line.to_string();
