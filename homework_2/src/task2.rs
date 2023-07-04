@@ -25,6 +25,10 @@ impl Rect {
         rect
     }
 
+    fn bottom_right(&self) -> (f32, f32) {
+            (4.0, 4.0)
+    }
+
 
     fn area(&self) -> f32 {
         self.width1*self.width1
