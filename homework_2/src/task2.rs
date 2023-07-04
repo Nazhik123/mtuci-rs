@@ -19,14 +19,14 @@ struct Rect {
 impl Rect {
     fn new(top_left: (f32, f32), width: f32) -> Self {
         let rect = Rect {
-            top_left1 : top_left,
+            top_left1 :top_left,
             width1 : width,
         };
         rect
     }
 
     fn bottom_right(&self) -> (f32, f32) {
-            (4.0, 4.0)
+            (self.top_left1.0 + self.width1, self.top_left1.1 - self.width1)
     }
 
 
